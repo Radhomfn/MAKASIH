@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.box {
+    width: 19ch;
+    animation: typing 3s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 28px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gandhi Serif', sans-serif;
+}
+
+@import url('https://fonts.cdnfonts.com/css/gandhi-serif');
